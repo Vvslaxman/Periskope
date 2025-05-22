@@ -2,28 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-/* globals.css */
-
 body {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url('D:\Periskope\FE\peri-app\bg.png');
-  background-size: cover;
-  background-attachment: fixed;
-  font-family: 'Arial', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #1e293b; /* Tailwind's text-slate-800 */
 }
 
-.glass {
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
-  border-radius: 15px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  padding: 2rem;
-  margin: 1rem;
+/* Custom scrollbar (optional, for closer look) */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
 }
-
-h1 {
-  color: #000000;
+::-webkit-scrollbar-thumb {
+  background-color: #88888880; /* Light grey, slightly transparent */
+  border-radius: 3px;
 }
-
-p {
-  color: #000000;
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555555cc; /* Darker grey on hover */
+}
+::-webkit-scrollbar-track {
+  background-color: transparent; /* Transparent track */
 }
